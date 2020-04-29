@@ -1,11 +1,3 @@
-/*
-
-Template 2095 Level
-
-http://www.tooplate.com/view/2095-level
-
-*/
-
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 13px;
@@ -69,7 +61,10 @@ p {
 	font-size: 1.8rem;
 	font-weight: 700;
 }
-.navbar a { color: black; }
+.navbar a { 
+	color: black;
+	padding-top: 15px;
+}
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(238, 80, 87, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -188,8 +183,16 @@ p {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-	background-color: #d53239;
-	border-color: #d53239;
+	background-color: #c2185b;
+	border-color: #c2185b;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.center-align {
+	text-align: center;
 }
 
 .tm-search-form .tm-form-element { padding: 0 5px; }

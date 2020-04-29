@@ -26,8 +26,8 @@
 
     <body>
         <div class="tm-main-content" id="top">
-            <div class="tm-top-bar-bg"></div>
-            <div class="tm-top-bar" id="tm-top-bar">
+            <!--div class="tm-top-bar-bg"></div-->
+            <div class="tm-top-bar active" id="tm-top-bar">
                 <!-- Top Navbar -->
                 <div class="container">
                     <div class="row">
@@ -37,13 +37,19 @@
                                 <img src="img/logo.png" alt="Site logo">
                                 Questtera
                             </a>
-                            <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <!--button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
                                 <ul class="navbar-nav ml-auto">
                                   <li class="nav-item">
                                     <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+                                  </li>
+								  <!--li class="nav-item">
+                                    <a class="nav-link" href="https://app.questerra.com">Build</a>
+                                  </li>
+								  <li class="nav-item">
+                                    <a class="nav-link" href="https://play.google.com/store/search?q=questtera&c=apps&hl=en">Play</a>
                                   </li>
                                   <li class="nav-item">
                                     <a class="nav-link" href="#tm-section-4">Portfolio</a>
@@ -55,7 +61,7 @@
                                     <a class="nav-link" href="#tm-section-6">Contact Us</a>
                                   </li>
                                 </ul>
-                            </div>                            
+                            </div-->                            
                         </nav>            
                     </div>
                 </div>
@@ -66,7 +72,7 @@
                         <div class="row">
                             <div class="col-xs-12 ml-auto mr-auto ie-container-width-fix">
                                 <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
-                                    <div class="form-row tm-search-form-row">
+                                    <!--div class="form-row tm-search-form-row">
                                         <div class="form-group tm-form-element tm-form-element-100">
                                             <i class="fa fa-map-marker fa-2x tm-form-element-icon"></i>
                                             <input name="city" type="text" class="form-control" id="inputCity" placeholder="Type your destination...">
@@ -79,9 +85,9 @@
                                             <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
                                             <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Check Out">
                                         </div>
-                                    </div>
+                                    </div-->
                                     <div class="form-row tm-search-form-row">
-                                        <div class="form-group tm-form-element tm-form-element-2">                                            
+                                        <!--div class="form-group tm-form-element tm-form-element-2">                                            
                                             <select name="adult" class="form-control tm-select" id="adult">
                                                 <option value="">Adult</option>
                                                 <option value="1">1</option>
@@ -129,14 +135,21 @@
                                                 <option value="10">10</option>
                                             </select>
                                             <i class="fa fa-2x fa-bed tm-form-element-icon"></i>
-                                        </div>
+                                        </div-->
+										<div class="form-group tm-form-element tm-form-element-2">
+										</div>
                                         <div class="form-group tm-form-element tm-form-element-2">
-                                            <button type="submit" class="btn btn-primary tm-btn-search">Check Availability</button>
+                                            <button type="submit" class="btn btn-primary tm-btn-search" formaction="https://app.questtera.com/">Build</button>
+                                        </div>
+										<div class="form-group tm-form-element tm-form-element-2">
+                                            <button type="submit" class="btn btn-primary tm-btn-search" formaction="https://play.google.com/store/search?q=questerra&c=apps&hl=en">Play</button>
                                         </div>
                                       </div>
                                       <div class="form-row clearfix pl-2 pr-2 tm-fx-col-xs">
-                                          <p class="tm-margin-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                          <a href="#" class="ie-10-ml-auto ml-auto mt-1 tm-font-semibold tm-color-primary">Need Help?</a>
+                                          <p class="tm-margin-b-0 full-width center-align">Questtera is an escape room that you can play in real life.</br>
+										  Go on real adventures created by the community and solve puzzles in a race against the clock.</br>
+										  Get started by downloading the Android app or build your own adventure online.</p>
+                                          <!--a href="#" class="ie-10-ml-auto ml-auto mt-1 tm-font-semibold tm-color-primary">Need Help?</a-->
                                       </div>
                                 </form>
                             </div>                        
@@ -149,9 +162,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col text-center">
-                            <h2 class="tm-section-title">We are here to help you?</h2>
-                            <p class="tm-color-white tm-section-subtitle">Subscribe to get our newsletters</p>
-                            <a href="#" class="tm-color-white tm-btn-white-bordered">Subscribe Newletters</a>
+                            <h2 class="tm-section-title">Real adventures. Play now.</h2>
+                            <!--p class="tm-color-white tm-section-subtitle">Subscribe to get our newsletters</p>
+                            <a href="#" class="tm-color-white tm-btn-white-bordered">Subscribe Newletters</a-->
                         </div>                
                     </div>
                 </div>        
@@ -440,7 +453,7 @@
             }
 
             function setPageNav(){
-                if($(window).width() > 991) {
+                /* if($(window).width() > 991) {
                     $('#tm-top-bar').singlePageNav({
                         currentClass:'active',
                         offset: 79
@@ -451,7 +464,7 @@
                         currentClass:'active',
                         offset: 65
                     });   
-                }
+                } */
             }
 
             function togglePlayPause() {
@@ -472,7 +485,7 @@
             $(document).ready(function(){
 
                 $(window).on("scroll", function() {
-                    if($(window).scrollTop() > 100) {
+                    if($(window).scrollTop() >= 0) {
                         $(".tm-top-bar").addClass("active");
                     } else {
                         //remove the background property so it comes transparent again (defined in your css)
